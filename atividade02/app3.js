@@ -19,10 +19,9 @@ const banco = getDatabase();
 
 const nodo = "clientes/-NcXQ4vR5xL0cKBLYte-"
 const refe = ref(banco, nodo)
-const att = child(refe, 'nome') 
-const novo = "Ana Eduarda"
+const dados = {nome: "Jao amorin", idade: 12}
 
-set(att, novo)
+set(refe, dados)
     .then(() => {
         console.log("alterou eee")
         process.exit(0)
