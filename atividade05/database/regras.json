@@ -1,0 +1,10 @@
+{
+    "rules": {
+      ".read": "now < 1695783600000",  // 2023-9-27
+      // ".write": "now < 1695783600000",  // 2023-9-27
+      ".write": "auth != null && root.child('users').child(auth.uid).child('role').val() === 'admin'",
+      "produtos": {
+        ".indexOn": ["nome", "descricao", "quantidade", "preco"],
+      }
+    }
+  }
