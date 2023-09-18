@@ -61,18 +61,12 @@ function getMostCheap(db, callback) {
 
 function getPriceRange(value, db, callback) {//0--->limit
     const refDB = ref(db, 'produtos/');
-    const list = [];
 
-    const consulta = query(refDB, orderByChild('preco'), endAt(value));
+    const consulta = query(refDB, orderByChild('preco'), endAt(+value));
 
     console.log(value)
 
-    onChildAdded(consulta, snapshot => {
-        if (snapshot.exists()) {
-            list.push([snapshot.key, snapshot.val()]);
-            callback(list);
-        }
-    });
+    onChildAdded(consulta, callback)
 }
 
 export { getOrderByChild, getFilterByChild, getMostExpensive, getMostCheap, getPriceRange }
