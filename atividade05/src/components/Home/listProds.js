@@ -70,7 +70,7 @@ function ListProds(props) {
         setData([...prods])
         setPriceRange(event.target.value)
         if (event.target.value === 0) setLoad(false)
-        getPriceRange(priceRange, props.firebase.db, receiveProds)
+        getPriceRange(event.target.value, props.firebase.db, receiveProds)
     }
 
     return (<div className='flex-container'>
