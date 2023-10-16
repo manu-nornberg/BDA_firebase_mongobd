@@ -1,0 +1,105 @@
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
+table th {
+  background-color: #8fff79;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #e0e0e0;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  text-align: center;
+  text-decoration: none;
+  background-color: #008822; 
+  color: #ffffff; 
+  border: 1px solid; 
+  border-radius: 4px; 
+  cursor: pointer;
+}
+
+.botao-deletar{
+  display: inline-block;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  text-align: center;
+  text-decoration: none;
+  background-color: #d60000; 
+  color: #ffffff; 
+  border: 1px solid; 
+  border-radius: 4px; 
+  cursor: pointer;
+}
+
+.botao-deletar:hover{
+  background-color: #5c0000;
+}
+
+button:hover {
+  background-color: #025a1c; 
+}
+
+form {
+  margin: 0 auto; 
+  padding: 20px;
+  
+}
+
+input{
+  padding: 7px;
+  border: 1px sienna solid;
+  border-radius: 4px;   
+
+}
+
+.nome {
+  width: 100%; 
+  padding-top: 10px; 
+}
+
+label {
+  display: block; 
+  margin-bottom: 1px; 
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cadastro{
+  padding: 20px;
+}
+
+.lista {
+  width: 70%; 
+  padding: 20px;
+  border-radius: 4px;
+}
