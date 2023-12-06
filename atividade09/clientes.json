@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Argel",
+        "id_cliente": "111",
+        "cpf": "12345678",
+        "email": "argel@gmail.com"
+    },
+    {
+        "nome": "Manu",
+        "id_cliente": "112",
+        "cpf": "98654321",
+        "email": "manu@gmail.com"
+    },
+    {
+        "nome": "Esther",
+        "id_cliente": "113",
+        "cpf": "6532198",
+        "email": "Esther@gmail.com"
+    },
+    {
+        "nome": "Johann",
+        "id_cliente": "114",
+        "cpf": "986542315",
+        "email": "johann@gmail.com"
+    }
+]
