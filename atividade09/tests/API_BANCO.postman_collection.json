@@ -1,0 +1,580 @@
+{
+	"info": {
+		"_postman_id": "957e0b12-a524-494d-8ef4-d1419bbe3483",
+		"name": "API BANCO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29349234"
+	},
+	"item": [
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "getAllClientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/clientes/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insertCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_cliente",
+									"value": "115",
+									"type": "text"
+								},
+								{
+									"key": "nome",
+									"value": "Lucas",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/clientes/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getClienteById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/clientes/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome",
+									"value": "amor",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/clientes/111",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								"111"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/clientes/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "procuraCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/clientes/?field=nome&search=manu",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								""
+							],
+							"query": [
+								{
+									"key": "field",
+									"value": "nome"
+								},
+								{
+									"key": "search",
+									"value": "manu"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "enderecos",
+			"item": [
+				{
+					"name": "getAllEnderecos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/enderecos/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"enderecos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEnderecoById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/enderecos/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"enderecos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insertEndereco",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "rua",
+									"value": "aaaaaaaaaaaaa",
+									"type": "text"
+								},
+								{
+									"key": "id_endereco",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "id_cliente",
+									"value": "111",
+									"type": "text"
+								},
+								{
+									"key": "numero",
+									"value": "5555",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/enderecos/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"enderecos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEndereco",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "rua",
+									"value": "testeeeeee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/enderecos/5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"enderecos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteEndereco",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/enderecos/6",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"enderecos",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "procuraEndereco",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/enderecos/?field=rua&search=rua das flores",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"enderecos",
+								""
+							],
+							"query": [
+								{
+									"key": "field",
+									"value": "rua"
+								},
+								{
+									"key": "search",
+									"value": "rua das flores"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEnderecoByCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/enderecos/bycliente/114",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"enderecos",
+								"bycliente",
+								"114"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "produtos",
+			"item": [
+				{
+					"name": "getAllProdutos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/produtos",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produtos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProdutoById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "111",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/produtos/112",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produtos",
+								"112"
+							],
+							"query": [
+								{
+									"key": "id_prod",
+									"value": "111",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insertProduto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome",
+									"value": "aaaaaaaa",
+									"type": "text"
+								},
+								{
+									"key": "id_prod",
+									"value": "131",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/produtos/?id_prod=130&nome=aaaaa",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produtos",
+								""
+							],
+							"query": [
+								{
+									"key": "id_prod",
+									"value": "130"
+								},
+								{
+									"key": "nome",
+									"value": "aaaaa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateProdutos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome",
+									"value": "awawawaw",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/produtos/111",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produtos",
+								"111"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProduto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "111",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/produtos/131",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produtos",
+								"131"
+							],
+							"query": [
+								{
+									"key": "id_prod",
+									"value": "111",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filtredProdutos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/produtos/?field=descricao&search=I5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produtos",
+								""
+							],
+							"query": [
+								{
+									"key": "field",
+									"value": "descricao"
+								},
+								{
+									"key": "search",
+									"value": "I5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rangePreco",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/produtos/filter_preco/?greater=10&less=500",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produtos",
+								"filter_preco",
+								""
+							],
+							"query": [
+								{
+									"key": "greater",
+									"value": "10"
+								},
+								{
+									"key": "less",
+									"value": "500"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "rua": "rua das flores",
+        "id_cliente": 111,
+        "id_endereco": 1,
+        "numero": 1223
+    },
+    {
+        "rua": "rua dos bombons",
+        "id_cliente": 112,
+        "id_endereco": 2,
+        "numero": 87
+    },
+    {
+        "rua": "aaaaaaaa",
+        "id_cliente": 113,
+        "id_endereco": 3,
+        "numero": 878
+    },
+    {
+        "rua": "rua legal",
+        "id_cliente": 114,
+        "id_endereco": 43,
+        "numero": 654
+    }
+]
