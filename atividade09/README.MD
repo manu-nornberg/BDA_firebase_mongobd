@@ -1,12 +1,19 @@
 # API em MongoDB
 ##### Para começar precisamos instalar os sequintes recursos:
 Para a instalação do mongo: 
+
 ```npm install mongodb```
+
 Para a instalação do Express:
+
 ```npm install express mongodb cors body-parser```
+
 Para a instalação do Nodemon:
+
 ```npm install nodemon -D```
+
 Para a importação do banco: 
+
 ```node importdb.js```
 
 ##### Após isso, faremos as consultas nas seguintes tabelas:
